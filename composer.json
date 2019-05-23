@@ -1,0 +1,11 @@
+{
+    "name": "administrator/aboutwechat",
+    "description": "about wechat",
+    "authors": [
+        {
+            "name": "wnnnnnn",
+            "email": "1152917824@qq.com"
+        }
+    ],
+    "require": {}
+}
