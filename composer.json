@@ -10,7 +10,7 @@
     "require": {},
     "autoload":{
         "psr-4":{
-            "Wnaboutwechat\\": "src/Wnaboutwechat"
+            "Wn\\": "Wn"
         }
     }
 }
