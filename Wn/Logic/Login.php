@@ -28,10 +28,11 @@ class Login{
         $url = Fun::url_connect(self::$url,$param_array);
 
         $curl = curl_init();
-        curl_setopt($curl, $url);
+        curl_setopt($curl,CURLOPT_URL, $url);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $wechat_encode = curl_exec($curl);
         curl_close($curl);
+        // var_dump($wechat_encode);
         $wechat = json_decode($wechat_encode,true);
         if(isset($wechat['errcode'])){
             return ['code'=>false,'msg'=>'登录失败'];
