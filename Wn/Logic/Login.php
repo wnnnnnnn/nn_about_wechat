@@ -17,7 +17,7 @@ class Login{
      */
     public static function Login($code = '',array $conf=[]){
         if (empty($code)){
-            return false;
+            return ['code'=>false,'msg'=>'code错误'];;
         }
         $param_array = [
             ['key'=>'appid','v'=>$conf['appid']],
